@@ -7,6 +7,7 @@ We expect you to have an understandable structure, clean code, and to be able to
 ## Technical details
 
 ### API
+
 You will need to use the following URLs to fetch the films and genres from `the movie db` API:
 
 movies - [https://api.themoviedb.org/3/discover/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false](https://api.themoviedb.org/3/discover/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false)
@@ -20,3 +21,13 @@ genres - [https://api.themoviedb.org/3/genre/movie/list?api_key=d432b933ecc6d564
 The API will provide part of the image url via the `poster_path` field of each film. It must be combined with the base image path `https://image.tmdb.org/t/p/w500/`
 
 **Have fun!**
+
+
+### Notes
+
+I've moved the API key into a `.env` file, and included a `.env.sample`. The key is shown above, but in case it was secret, it shouldn't be in the repo. 
+
+Things to do:
+- Handle films with no movie poster with placeholder
+- Eject from CreateReactApp and tidy up, or lift and shift to be without CRA.
+- Run eslint / prettier on commit with commit hooks
