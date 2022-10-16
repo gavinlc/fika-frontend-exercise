@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 export default function useFikaSearch() {
   const [loading, setLoading] = useState<boolean>(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -10,9 +9,9 @@ export default function useFikaSearch() {
   const [searchTerm, setSearchTerm] = useState("");
 
 
-  const moviesEndpoint = `https://api.themoviedb.org/3/discover/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false`;
-  const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US`;
-  const searchEndpoint = `https://api.themoviedb.org/3/search/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false&query=`;
+  const moviesEndpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&include_adult=false`;
+  const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
+  const searchEndpoint = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&include_adult=false&query=`;
 
   /*
    * Generic wrapper for getting data from API via fetch
@@ -21,6 +20,7 @@ export default function useFikaSearch() {
     endpoint: string,
     callback: (result: T) => void
   ) {
+
     setLoading(true);
     setErrorMessage(null);
 

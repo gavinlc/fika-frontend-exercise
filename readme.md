@@ -25,7 +25,7 @@ The API will provide part of the image url via the `poster_path` field of each f
 
 ### Notes
 
-I've moved the API key into a `.env` file, and included a `.env.sample`. The key is shown above, but in case it was secret, it shouldn't be in the repo. 
+I've moved the API key into a `.env` file, and included a `.env.sample`. The key is shown above, but in case it was secret, it shouldn't be in the repo. You will need to copy `.env.sample` => `.env` and add the API key.
 
 Things to do:
 - Add Cypress for F/E resting
