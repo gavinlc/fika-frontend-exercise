@@ -1,7 +1,13 @@
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
-const LoadingComponent = () => {
+interface ErrorMessagegComponentProps {
+  message: string;
+}
+
+const ErrorMessagegComponent = (props: ErrorMessagegComponentProps) => {
+  const { message } = props;
+
   return (
     <Grid
       container
@@ -12,10 +18,10 @@ const LoadingComponent = () => {
       style={{ minHeight: "100vh" }}
     >
       <Grid item xs={3}>
-        <Typography>loading...</Typography>
+        <Typography>{message}</Typography>
       </Grid>
     </Grid>
   );
 };
 
-export default LoadingComponent;
+export default ErrorMessagegComponent;

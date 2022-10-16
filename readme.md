@@ -28,6 +28,8 @@ The API will provide part of the image url via the `poster_path` field of each f
 I've moved the API key into a `.env` file, and included a `.env.sample`. The key is shown above, but in case it was secret, it shouldn't be in the repo. 
 
 Things to do:
+- Add Cypress for F/E resting
+- Add more component tests
 - Handle films with no movie poster with placeholder
 - Eject from CreateReactApp and tidy up, or lift and shift to be without CRA.
 - Run eslint / prettier on commit with commit hooks

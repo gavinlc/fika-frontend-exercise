@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import env from "react-dotenv";
+
 
 export default function useFikaSearch() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -10,9 +10,9 @@ export default function useFikaSearch() {
   const [searchTerm, setSearchTerm] = useState("");
 
 
-  const moviesEndpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${env.API_KEY}&language=en-US&page=1&include_adult=false`;
-  const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=${env.API_KEY}&language=en-US`;
-  const searchEndpoint = `https://api.themoviedb.org/3/search/movie?api_key=${env.API_KEY}&language=en-US&page=1&include_adult=false&query=`;
+  const moviesEndpoint = `https://api.themoviedb.org/3/discover/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false`;
+  const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US`;
+  const searchEndpoint = `https://api.themoviedb.org/3/search/movie?api_key=d432b933ecc6d5642d8d2befbc40c7ac&language=en-US&page=1&include_adult=false&query=`;
 
   /*
    * Generic wrapper for getting data from API via fetch
