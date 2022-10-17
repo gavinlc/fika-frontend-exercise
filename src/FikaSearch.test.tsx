@@ -14,7 +14,7 @@ test("searches", () => {
   fireEvent.change(searchInput, { target: { value: 'test' } });
   expect(searchInput.value).toBe('test');
 
-  const text = screen.getByText(searchInput.value);
+  const text = screen.getByText(searchInput.value, {ignore: 'input'});
   expect(text).toBeInTheDocument();
 
 })
