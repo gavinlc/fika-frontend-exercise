@@ -17,4 +17,4 @@ test("searches", () => {
   const text = screen.getByText(searchInput.value, {ignore: 'input'});
   expect(text).toBeInTheDocument();
 
-})
+});
