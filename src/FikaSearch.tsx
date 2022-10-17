@@ -4,11 +4,11 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 
-import InputComponent from "./components/input.component";
-import LoadingComponent from "./components/loading.component";
+import InputComponent from "./components/Input.component";
+import LoadingComponent from "./components/Loading.component";
 import useFikaSearch from "./hooks/UseFikaSearch.hook";
-import FilmGridComponent from "./components/film-grid.component";
-import ErrorMessagegComponent from "./components/error-message.component";
+import FilmGridComponent from "./components/FilmGrid.component";
+import ErrorMessagegComponent from "./components/ErrorMessage.component";
 
 const FikaSearch = () => {
   const { errorMessage, filmsWithGenres, loading, searchTerm, setSearchTerm } =

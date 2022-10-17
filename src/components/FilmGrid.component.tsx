@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Unstable_Grid2';
-import FilmComponent from "./film.component";
+import FilmComponent from "./Film.component";
 
 interface FilmGridComponentProps {
   films: FilmWithGenres[];
