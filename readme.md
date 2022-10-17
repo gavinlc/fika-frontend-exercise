@@ -33,3 +33,4 @@ Things to do:
 - Handle films with no movie poster with placeholder
 - Eject from CreateReactApp and tidy up, or lift and shift to be without CRA.
 - Run eslint / prettier on commit with commit hooks
+- Add pagination / number of results to results
